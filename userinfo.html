@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원목록조회</title>
+    <style>
+        #title{
+            text-align: center;
+        }
+        
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <h2>회원목록</h2>
+    </div>
+        <table id="tbl_userInfo">
+            <thead>
+                <tr>
+                    <td>NO</td>
+                    <td>ID</td>
+                    <td>PW</td>
+                    <td>NAME</td>
+                    <td>GENDER</td>
+                    <td>EMAIL</td>
+                    <td>PHONE</td>
+                </tr>
+            </thead>
+            <tbody>
+    
+            </tbody>
+        </table>
+        
+        <script>
+            (() => {
+            const tbody = document.querySelector("table#tbl_userInfo tbody");
+            const userInfos = JSON.parse(localStorage.getItem('userInfos'));
+
+            tbody.innerHTML = userInfos.reduce((html, {id, pw1, userName, gender, email, mobile}, index) => {
+            const tr = `
+            <tr>
+                <td>${index + 1}</td>
+                <td>${id}</td>
+                <td>${pw1}</td>
+                <td>${userName}</td>
+                <td>${gender}</td>
+                <td>${email}</td>
+                <td>${mobile}</td>
+            </tr>
+            `;
+            return html + tr;
+            }, "");
+
+        })();
+        </script>
+</body>
+</html>

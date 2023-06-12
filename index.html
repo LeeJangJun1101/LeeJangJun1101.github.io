@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장준 홈페이지</title>
+    <link rel = "stylesheet" href = "/css/main.css">
+    <link rel = "stylesheet" href = "/css/scroll.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    </style>
+    <script src ="/js/popup.js"></script> 
+</head>
+<body>
+    
+
+<div id="container">
+    
+    <header id = "header"> 
+        <nav class ="menu">
+            <ul>
+                <li><a href = "#header" <b>Home</b></a></li>
+                <li><a href = "#about_page" <b>About</b></a></li>
+                <li><a href = "#travel_page" <b>Travle</b></a></li>
+                <li><a href = "#roadmap_page" <b>Roadmap</b></a></li>
+            </ul>
+        </nav>
+        <div class="menu2">
+            <label for="expand-menu"><div>메뉴</div></label>
+            <input type="checkbox" id="expand-menu" name="expand-menu">
+            <ul>
+                <li><a href="#" class="item"><div onclick="login()">로그인</div></a></li>
+                <li><a href="#" class="item"><div onclick="signup()">회원가입</div></a></li>
+                <li><a href="#" class="item"><div onclick="userList()">회원목록</div></a></li>
+            </ul>
+        </div>
+        
+    </header> 
+  <div class="list">
+      <div class="one">
+        <span class="profile"><img src="../images/home.jpg" width="550px;" height="550px" alt=""/></span> 
+        <h3><strong>내 홈페이지에 온걸 환영해!!</strong> <br>스크롤을 내려볼래?</h3>
+      </div> 
+  </div>
+
+  <div class="list" id = "about_page">
+      <div class ="two">
+        <div class = "me_div"><img class = "me" src ="../images/sea.jpg" alt="" width="450px;" height="500px"></div>
+          <div class = "me_content"> <p id="intro"><strong>자기소개</strong></p><br><br>
+            <h3 class ="intext" id="intext1" >
+            이름 : 이장준<br>
+            생년월일 : 1999/11/01 <br>
+            혈액형 : O형 <br>
+            취미 : 산책 <br>
+            MBTI : ESFP<br>
+            사는곳 : 수원<br>
+            <br><br><br></h3>
+            <p class="intext" id="intext2" >For the future junior developer!</p>
+        </div>
+            
+      </div>
+  </div>
+  
+  <div class="list" id="travel_page">
+      <div class="three">
+        <h3>여행을 떠나요~~✈️✈️✈️✈️</h3>
+
+            <div class = "travel">
+                <div class="place__card">
+                    <img src="../images/place1.jpg" alt="" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <span class = "star">☆</span>
+                            <span class="place__rating-number">4.8</span>
+                        </span>
+                        <div class="place__data">
+                            <h3 class="place__title">Bali</h3>
+                            <span class="place__subtitle">Indonesia</span>
+                            <span class="place__price">$2499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="../images/place2.jpg" alt="" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <span class = "star">☆</span>
+                            <span class="place__rating-number">5.0</span>
+                        </span>
+                        <div class="place__data">
+                            <h3 class="place__title">Bora Bora</h3>
+                            <span class="place__subtitle">Polinesia</span>
+                            <span class="place__price">$1599</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="../images/place3.jpg" alt="" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <span class = "star">☆</span>
+                            <span class="place__rating-number">4.9</span>
+                        </span>
+                        <div class="place__data">
+                            <h3 class="place__title">Hawaii</h3>
+                            <span class="place__subtitle">USA</span>
+                            <span class="place__price">$3499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="place__card">
+                    <img src="../images/place4.jpg" alt="" class="place__img">
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <span class = "star">☆</span>
+                            <span class="place__rating-number">4.8</span>
+                        </span>
+                        <div class="place__data">
+                            <h3 class="place__title">Whitehaven</h3>
+                            <span class="place__subtitle">Australia</span>
+                            <span class="place__price">$2499</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+      </div>
+  </div>
+
+    <div class="list" id="roadmap_page">
+        <div class = "four">
+            <h3 class="roadmap_part">Part1. Computer Science, 컴퓨터 공학 기초</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Computer Science</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Process와 Thread</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">CPU Scheduling</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important" id="zz">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">Synchronize(동기화)와 Deadlock</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Memory
+                    </span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important" id="zz">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">Security</span>
+                </div>
+            </div>
+            <div class="long_content">
+                <span class="important">중요</span>
+                <br><br>
+                <span class="content_text">자료구조/알고리즘</span>
+            </div>
+                
+            
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "five">
+            <h3 class="roadmap_part">Part2-1. Java</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Java</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">Java와 JVM의 기초</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">변수</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">연산자</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">조건 & 반복문</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">배열</span>
+                </div>
+            </div>
+
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">객체지향 프로그래밍I<br><span class="small">(오버로딩,오버라이딩까지)</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Exception Handling</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Java 자료 구조<br>Colletion</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">객체지향 프로그래밍II</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Generic, Enum</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "six">
+            <h3 class="roadmap_part">Part2-2. Java</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Java</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">Thread</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Lamda & Stream</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">Annotation</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">IO 입출력</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">Network<br><span class="small">네트워크,소켓프로그래밍</span></span>
+                </div>
+            </div>
+
+            <div class="roadmap_contents">
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">주요 디자인 패턴<br><span class="small">MVC,싱글톤,어댑터 등</span></span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "seven">
+            <h3 class="roadmap_part">Part3. Database</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Database</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Database 이론</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Data CRUD</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Data Relation<br><span class="small">Join,조건문,Dynamic Query</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Table</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">View</span>
+                </div>
+            </div>
+
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">CUI 기반의 실습<br><span class="small">Pure,Java 기반 CRUD</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">Index</span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">JVM 고급</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "eight">
+            <h3 class="roadmap_part">Part4. Git</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Git</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Git 이란?</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">가입 및 주요 기능 소개</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Branch, PR, Merge,<br>커밋 메세지</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Git 고급<br><span class="small">Cherry pick, rebase 등</span></span>
+                </div>
+                <span class="arrow_blank">-></span>
+                <div class="content_blank">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Table</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="list">
+        <div class = "nine">
+            <h3 class="roadmap_part">Part5. Spring(Boot MVC)</h3>
+            <hr>
+            <div class="part_title"><span class="title_block"><h2>Spring(Boot MVC)</h2></span></div>
+            <div class="roadmap_contents">
+                <div class="content_important">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">Spring이란<br><span class="small">AOP, IDC, DI등 포함하여</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_important">
+                    <span class="important">중요</span>
+                    <br><br>
+                    <span class="content_text">웹 개발과 Rest API</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Spring Boot</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">CURD API 만들어보기<br><span class="small">(with lombok)</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Mybatis<br><span class="small">Database 연동, 리팩토링</span></span>
+                </div>
+            </div>
+
+            <div class="roadmap_contents">
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Exception Handling</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">외부 API 연동<br><span class="small">(Rest template, Feign)</span></span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_basic">
+                    <span class="basic">기본</span>
+                    <br><br>
+                    <span class="content_text">Logging</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">트랜잭션</span>
+                </div>
+                <span class="arrow">-></span>
+                <div class="content_naka">
+                    <span class="naka">네카라쿠베 필수</span>
+                    <br><br>
+                    <span class="content_text">Test Code</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+<div>
+</body>
